@@ -10,4 +10,7 @@ required packages:
 
 
 script to run the app:
+
+- 
+
 - flutter packages pub run build_runner watch --delete-conflicting-outputs
