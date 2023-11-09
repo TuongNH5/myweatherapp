@@ -87,10 +87,10 @@ class _ListViewHourlyWeatherForecastState extends State<ListViewHourlyWeatherFor
   void initState() {
     // TODO: implement initState
     super.initState();
-
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      scrollToIndex(6);
-    });
+    //
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   scrollToIndex(6);
+    // });
 
   }
 
