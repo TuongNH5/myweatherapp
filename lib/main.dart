@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:myweatherapp/presentation/screen/home_screen.dart';
 
 import 'configs/auto_router/app_router.dart';
 import 'configs/injection.dart';
@@ -14,13 +16,18 @@ Future<void> main() async {
   await initializeDependencies();
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     AppRouter appRouter = AppRouter();
+
+    // MaterialApp(
+    //   builder: EasyLoading.init(),
+    //   home: HomeScreen(),
+    // );
     return MaterialApp.router(
+      builder: EasyLoading.init(),
       routerConfig: appRouter.config(),
     );
   }

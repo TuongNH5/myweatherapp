@@ -1,9 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../screen/cubit/data_weather.dart';
-import '../../screen/detail_screen.dart';
-import '../../screen/home_screen.dart';
+import '../../data/source/network/data_weather.dart';
+import '../../presentation/screen/detail_screen.dart';
+import '../../presentation/screen/home_screen.dart';
 
 
 part 'app_router.gr.dart';
